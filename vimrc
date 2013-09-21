@@ -4,7 +4,7 @@ set nocompatible
 " enable syntax highlighting
 syntax enable
 set background=dark
-set guifont=Monaco\ for\ Powerline:h14
+" set guifont=Source\ Code\ Pro\ for\ Powerline:h14
 
 " configure Vundle
 filetype on " without this vim emits a zero exit status, later, because of :ft off
@@ -82,7 +82,6 @@ let g:gitgutter_enabled=1
 """""""""""""""""""""""""""""""""""
 nmap <leader>v :vsp<CR>
 nmap <leader>e :sp<CR>
-nnoremap <leader><space> :noh<cr>
 
 " let g:Powerline_symbols = 'fancy'
 let g:solarized_menu=1
