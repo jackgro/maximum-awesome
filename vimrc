@@ -3,6 +3,8 @@ set nocompatible
 
 " enable syntax highlighting
 syntax enable
+set background=dark
+set guifont=Monaco\ for\ Powerline:h14
 
 " configure Vundle
 filetype on " without this vim emits a zero exit status, later, because of :ft off
@@ -72,7 +74,31 @@ map <silent> <leader>V :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimr
 " plugin settings
 let g:ctrlp_match_window = 'order:ttb,max:20'
 let g:NERDSpaceDelims=1
-let g:gitgutter_enabled = 0
+let g:gitgutter_enabled=1
+
+
+"""""""""""""""""""""""""""""""""""
+"""""""""" My settings """"""""""""
+"""""""""""""""""""""""""""""""""""
+nmap <leader>v :vsp<CR>
+nmap <leader>e :sp<CR>
+nnoremap <leader><space> :noh<cr>
+
+" let g:Powerline_symbols = 'fancy'
+let g:solarized_menu=1
+let g:solarized_visibility = "high"
+let g:solarized_contrast = "high"
+let g:gitgutter_highlight_lines = 1
+set guioptions-=T " Removes top toolbar
+set guioptions-=r " Removes right hand scroll bar
+set go-=L " Removes left hand scroll bar
+
+"Enable system copy
+vmap <C-c> y:call system("pbcopy", getreg("\""))<CR>
+
+"""""""""""""""""""""""""""""""""""
+"""""""" End My settings """"""""""
+"""""""""""""""""""""""""""""""""""
 
 " Use The Silver Searcher https://github.com/ggreer/the_silver_searcher
 if executable('ag')
