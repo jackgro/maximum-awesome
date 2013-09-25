@@ -82,6 +82,7 @@ let g:gitgutter_enabled=1
 """""""""""""""""""""""""""""""""""
 nmap <leader>v :vsp<CR>
 nmap <leader>e :sp<CR>
+nmap <Leader>nt :tabnew<CR>
 
 " let g:Powerline_symbols = 'fancy'
 let g:solarized_menu=1
