@@ -66,6 +66,8 @@ nmap <leader>f :NERDTreeFind<CR>
 nmap <leader>t :CtrlP<CR>
 nmap <leader>T :CtrlPClearCache<CR>:CtrlP<CR>
 nmap <leader>] :TagbarToggle<CR>
+nmap <leader>p :set paste<CR>
+nmap <leader>np :set nopaste<CR>
 nmap <leader><space> :call whitespace#strip_trailing()<CR>
 nmap <leader>g :GitGutterToggle<CR>
 nmap <leader>c <Plug>Kwbd
@@ -75,6 +77,7 @@ map <silent> <leader>V :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimr
 let g:ctrlp_match_window = 'order:ttb,max:20'
 let g:NERDSpaceDelims=1
 let g:gitgutter_enabled=1
+let g:airline_powerline_fonts = 1
 
 
 """""""""""""""""""""""""""""""""""
@@ -84,7 +87,6 @@ nmap <leader>v :vsp<CR>
 nmap <leader>e :sp<CR>
 nmap <Leader>nt :tabnew<CR>
 
-" let g:Powerline_symbols = 'fancy'
 let g:solarized_menu=1
 let g:solarized_visibility = "high"
 let g:solarized_contrast = "high"
@@ -92,6 +94,9 @@ let g:gitgutter_highlight_lines = 1
 set guioptions-=T " Removes top toolbar
 set guioptions-=r " Removes right hand scroll bar
 set go-=L " Removes left hand scroll bar
+
+" Vim Airline settings
+let g:ttimeoutlen = 50
 
 "Enable system copy
 vmap <C-c> y:call system("pbcopy", getreg("\""))<CR>
