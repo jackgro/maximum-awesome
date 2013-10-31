@@ -66,8 +66,6 @@ nmap <leader>f :NERDTreeFind<CR>
 nmap <leader>t :CtrlP<CR>
 nmap <leader>T :CtrlPClearCache<CR>:CtrlP<CR>
 nmap <leader>] :TagbarToggle<CR>
-nmap <leader>p :set paste<CR>
-nmap <leader>np :set nopaste<CR>
 nmap <leader><space> :call whitespace#strip_trailing()<CR>
 nmap <leader>g :GitGutterToggle<CR>
 nmap <leader>c <Plug>Kwbd
@@ -86,11 +84,16 @@ let g:airline_powerline_fonts = 1
 nmap <leader>v :vsp<CR>
 nmap <leader>e :sp<CR>
 nmap <Leader>nt :tabnew<CR>
+nmap <leader>p :set paste<CR>
+nmap <leader>np :set nopaste<CR>
+
+" For vim-less
+" nnoremap ,m :w <BAR> !lessc % > %:t:r.css<CR><space> 
 
 let g:solarized_menu=1
 let g:solarized_visibility = "high"
 let g:solarized_contrast = "high"
-let g:gitgutter_highlight_lines = 1
+let g:gitgutter_highlight_lines=0
 set guioptions-=T " Removes top toolbar
 set guioptions-=r " Removes right hand scroll bar
 set go-=L " Removes left hand scroll bar
