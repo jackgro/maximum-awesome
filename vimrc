@@ -74,8 +74,6 @@ map <silent> <leader>V :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimr
 " plugin settings
 let g:ctrlp_match_window = 'order:ttb,max:20'
 let g:NERDSpaceDelims=1
-let g:gitgutter_enabled=1
-let g:airline_powerline_fonts = 1
 
 
 """""""""""""""""""""""""""""""""""
@@ -88,18 +86,21 @@ nmap <leader>p :set paste<CR>
 nmap <leader>np :set nopaste<CR>
 
 " For vim-less
-" nnoremap ,m :w <BAR> !lessc % > %:t:r.css<CR><space> 
+" nnoremap ,m :w <BAR> !lessc % > %:t:r.css<CR><space>
 
 let g:solarized_menu=1
 let g:solarized_visibility = "high"
 let g:solarized_contrast = "high"
+let g:gitgutter_enabled=1
 let g:gitgutter_highlight_lines=0
 set guioptions-=T " Removes top toolbar
 set guioptions-=r " Removes right hand scroll bar
 set go-=L " Removes left hand scroll bar
+set colorcolumn=80
 
 " Vim Airline settings
 let g:ttimeoutlen = 50
+let g:airline_powerline_fonts = 1
 
 "Enable system copy
 vmap <C-c> y:call system("pbcopy", getreg("\""))<CR>
