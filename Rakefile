@@ -161,6 +161,7 @@ task :default do
   step 'symlink'
   link_file 'vim'                   , '~/.vim'
   link_file 'tmux.conf'             , '~/.tmux.conf'
+  link_file 'zshrc'                 , '~/.zshrc'
   link_file 'vimrc'                 , '~/.vimrc'
   link_file 'vimrc.bundles'         , '~/.vimrc.bundles'
   unless File.exist?(File.expand_path('~/.vimrc.local'))
