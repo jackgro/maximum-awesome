@@ -10,10 +10,18 @@ ZSH_THEME="cloud"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# directories
 alias intf="cd ~/Interfolio/"
 alias byc="cd ~/Interfolio/byc-frontend/"
 alias tenure="cd ~/Interfolio/byc-tenure-frontend/"
 alias max="cd ~/Interfolio/maximum-awesome/"
+
+#ssh keys
+alias sshbyc="ssh -i ~/.ssh/intf-byc-test.pem ubuntu@byc-test.interfolio.com"
+alias sshaccount="ssh -i ~/.ssh/intf-account-test.pem ubuntu@account-test.interfolio.com"
+
+# commands
 alias ports="lsof -wni tcp:8443"
 alias log="git log --pretty=format:'%Cred%h%Creset %C(yellow)%an%Creset %Cgreen(%cr) %d%Creset %s %C(bold blue)' --abbrev-commit"
 alias rhard="git reset HEAD --hard"
