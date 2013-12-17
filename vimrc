@@ -100,6 +100,16 @@ set go-=L " Removes left hand scroll bar
 set colorcolumn=80
 set nowrap " Dont wrap text
 
+" Folding
+set foldmethod=syntax
+set foldlevelstart=1
+
+" Map space to open/close folds
+nnoremap <Space> za
+
+let javaScript_fold=1 " JavaScript
+let ruby_fold=1 " Ruby
+
 " Vim Airline settings
 let g:ttimeoutlen = 50
 let g:airline_powerline_fonts = 1
