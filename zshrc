@@ -18,8 +18,10 @@ alias tenure="cd ~/Interfolio/byc-tenure-frontend/"
 alias max="cd ~/Interfolio/maximum-awesome/"
 
 #ssh keys
-alias sshbyc="ssh -i ~/.ssh/intf-byc-test.pem ubuntu@byc-test.interfolio.com"
-alias sshaccount="ssh -i ~/.ssh/intf-account-test.pem ubuntu@account-test.interfolio.com"
+alias sshbyc2="ssh -i ~/.ssh/intf-byc.pem ubuntu@byc-east-1.interfolio.com"
+alias sshbyc2="ssh -i ~/.ssh/intf-byc.pem ubuntu@byc-east-2.interfolio.com"
+alias sshbyctest="ssh -i ~/.ssh/intf-byc-test.pem ubuntu@byc-test.interfolio.com"
+alias sshaccounttest="ssh -i ~/.ssh/intf-account-test.pem ubuntu@account-test.interfolio.com"
 
 # commands
 alias ports="lsof -wni tcp:8443"
